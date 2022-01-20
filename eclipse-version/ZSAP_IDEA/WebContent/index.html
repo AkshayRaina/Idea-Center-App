@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m , sap.ui.layout , sap.ui.unified"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots='{
+					"zsap_idea":"./zsap_idea",
+					"com.quinnox.zsap_idea":"./"	
+				}'>
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				/* sap.ui.localResources("zsap_idea");
+				var app = new sap.m.App({initialPage:"idHome1"});
+				var page = sap.ui.view({id:"idHome1", viewName:"zsap_idea.Home", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content"); */
+				
+				
+				new sap.ui.core.ComponentContainer({
+					name:"com.quinnox.zsap_idea"
+				}).placeAt("content"); 
+				
+				
+		</script>
+
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
